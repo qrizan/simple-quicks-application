@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  input:focus,
+  button:focus {
+    outline: none;
+  }
+}
+
+body {
+  @apply bg-[#2E2E2E] text-white;
+}
+
+/* REACT DATEPICKER */
+.react-datepicker__view-calendar-icon input {
+  padding: 5px;
+}
+
+.react-datepicker__input-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* SCROLLBAR */
+
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: gray;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 10px;
+}
+
+/* POPUP */
+
+.popup {
+  width: 734px;
+  height: 737px;
+  padding: 24px 32px;
+  .popup-content {
+    .popup-item {
+      padding: 22px 0;
+    }
+  }
+}
